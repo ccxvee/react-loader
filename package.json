@@ -1,0 +1,16 @@
+{
+  "name": "react-simple-loader",
+  "version": "1.0.0",
+  "description": "React component that returns some content depending on the current loading status",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "ccxvee",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "simple",
+    "loader"
+  ]
+}
