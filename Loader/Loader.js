@@ -1,18 +1,24 @@
-import React from "react";
+import { IDLE, LOADING, SUCCESS, ERROR } from "./statuses";
 
-function Loader({
+export default function Loader({
+  status,
+  idleView = null,
+  loadingView = null,
+  errorView = null,
   children = null,
-  loadingStatus,
-  idle = null,
-  loading = null,
-  success = null,
-  error = null,
 }) {
-  if (!loadingStatus) {
-    throw new Error("requires loadingStatus prop");
+  switch (status) {
+    case IDLE:
+      return idleView;
+    case LOADING:
+      return loadingView;
+    case ERROR:
+      return errorView;
+    case SUCCESS:
+      return children;
+    default:
+      throw new Error(
+        "The status property must be one of the following string values: 'idle', 'loading', 'success' or 'error'."
+      );
   }
-
-  return children;
 }
-
-export { Loader };
