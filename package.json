@@ -2,7 +2,7 @@
   "name": "react-simple-loader",
   "version": "1.0.0",
   "description": "React component that returns some content depending on the current loading status",
-  "main": "index.js",
+  "main": "./Loader",
   "scripts": {
     "test": "jest"
   },
