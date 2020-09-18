@@ -16,14 +16,17 @@ export default function Loader({
     case ERROR:
       return errorView;
     case SUCCESS:
-      if (successView && children)
+      if (successView !== undefined && children !== undefined)
         throw new Error(
           "Only one of the following properties can be defined at the same time: 'successView' or 'children'."
         );
-      if (successView) {
+      if (successView !== undefined) {
         return successView;
       }
-      return children;
+      if (children !== undefined) {
+        return children;
+      }
+      return null;
     default:
       throw new Error(
         "The status property must be one of the following string values: 'idle', 'loading', 'success' or 'error'."
