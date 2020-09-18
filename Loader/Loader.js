@@ -1,12 +1,12 @@
 import { IDLE, LOADING, SUCCESS, ERROR } from "./statuses";
 
 export default function Loader({
-  status,
   idleView = null,
   loadingView = null,
-  successView = null,
   errorView = null,
-  children = null,
+  status,
+  successView,
+  children,
 }) {
   switch (status) {
     case IDLE:
