@@ -1,18 +1,29 @@
 {
-  "name": "react-simple-loader",
+  "name": "@ccxvee/react-loader",
   "version": "1.0.0",
   "description": "React component that returns some content depending on the current loading status",
   "main": "./Loader",
   "scripts": {
     "test": "jest"
   },
-  "author": "ccxvee",
+  "author": {
+    "name": "ccxvee",
+    "email": "ccxvee@mail.ru"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccxvee/react-loader.git"
+  },
   "keywords": [
     "react",
-    "simple",
-    "loader"
+    "loader",
+    "react-loader"
   ],
+  "bugs": {
+    "url": "https://github.com/ccxvee/react-loader/issues",
+    "email": "ccxvee@mail.ru"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
